@@ -1,1 +1,1 @@
-# CSharp-Fundamentals
+# 🎓 SoftUni - C# Fundamentals
