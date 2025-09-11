@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-data-type-finder", "01-data-type-finder\01-data-type-finder.csproj", "{6FC5EBD2-93B2-4B27-89E9-9A0C3273ED62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-from-left-to-right", "02-from-left-to-right\02-from-left-to-right.csproj", "{74500282-BBA0-452C-91CB-A528EF47DDE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6FC5EBD2-93B2-4B27-89E9-9A0C3273ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC5EBD2-93B2-4B27-89E9-9A0C3273ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC5EBD2-93B2-4B27-89E9-9A0C3273ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74500282-BBA0-452C-91CB-A528EF47DDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74500282-BBA0-452C-91CB-A528EF47DDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74500282-BBA0-452C-91CB-A528EF47DDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74500282-BBA0-452C-91CB-A528EF47DDE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
