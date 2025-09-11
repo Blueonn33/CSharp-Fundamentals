@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-convert-meters-to-kilometers", "01-convert-meters-to-kilometers\01-convert-meters-to-kilometers.csproj", "{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C59EF9A0-1423-4EC9-B19E-7E002723D4C5}
+	EndGlobalSection
+EndGlobal
