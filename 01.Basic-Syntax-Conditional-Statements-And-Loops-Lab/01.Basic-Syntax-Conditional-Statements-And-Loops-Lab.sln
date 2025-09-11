@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-multiplication-table-2",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-even-number", "12-even-number\12-even-number.csproj", "{0B2D4533-6570-455F-80DD-AF1FC5E160FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-holidays-between-two-dates", "13-holidays-between-two-dates\13-holidays-between-two-dates.csproj", "{5B9B17E1-F37A-487C-9E6A-8783DE976DCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{0B2D4533-6570-455F-80DD-AF1FC5E160FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B2D4533-6570-455F-80DD-AF1FC5E160FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B2D4533-6570-455F-80DD-AF1FC5E160FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9B17E1-F37A-487C-9E6A-8783DE976DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9B17E1-F37A-487C-9E6A-8783DE976DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9B17E1-F37A-487C-9E6A-8783DE976DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9B17E1-F37A-487C-9E6A-8783DE976DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
