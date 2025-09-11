@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int meters = int.Parse(Console.ReadLine());
+            double kilometers = meters / 1000.0;
+            Console.WriteLine($"{kilometers:f2}");
         }
     }
 }
