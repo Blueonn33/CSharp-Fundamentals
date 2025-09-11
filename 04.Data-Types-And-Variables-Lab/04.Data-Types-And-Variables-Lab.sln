@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-convert-meters-to-kilometers", "01-convert-meters-to-kilometers\01-convert-meters-to-kilometers.csproj", "{01016FC9-4752-4C7E-84B9-7EDF2CB80B56}"
 EndProject
@@ -20,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-town-info", "08-town-info\08-town-info.csproj", "{86CF06B4-406A-4138-83BB-4F0926692A82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-chars-to-string", "09-chars-to-string\09-chars-to-string.csproj", "{FDEE20D5-B52B-468B-849B-C14418EC637F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-lower-or-upper", "10-lower-or-upper\10-lower-or-upper.csproj", "{0A1D71B4-9609-4020-BECF-009C552E18CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-refactor-volume-of-pyramid", "11-refactor-volume-of-pyramid\11-refactor-volume-of-pyramid.csproj", "{D2EB266A-AAA3-4419-AA03-62AFE5F6DDBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-refactor-special-numbers", "12-refactor-special-numbers\12-refactor-special-numbers.csproj", "{13B71582-8896-4CD9-998D-0C5C4FDB226C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{FDEE20D5-B52B-468B-849B-C14418EC637F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDEE20D5-B52B-468B-849B-C14418EC637F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDEE20D5-B52B-468B-849B-C14418EC637F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1D71B4-9609-4020-BECF-009C552E18CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1D71B4-9609-4020-BECF-009C552E18CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1D71B4-9609-4020-BECF-009C552E18CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1D71B4-9609-4020-BECF-009C552E18CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EB266A-AAA3-4419-AA03-62AFE5F6DDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EB266A-AAA3-4419-AA03-62AFE5F6DDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EB266A-AAA3-4419-AA03-62AFE5F6DDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EB266A-AAA3-4419-AA03-62AFE5F6DDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B71582-8896-4CD9-998D-0C5C4FDB226C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B71582-8896-4CD9-998D-0C5C4FDB226C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B71582-8896-4CD9-998D-0C5C4FDB226C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B71582-8896-4CD9-998D-0C5C4FDB226C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
