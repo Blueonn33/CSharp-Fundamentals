@@ -11,7 +11,7 @@
             int pokedTargets = 0;
             int initialPower = powerN;
 
-            while(initialPower > distanceBetweenTargetsM)
+            while(initialPower >= distanceBetweenTargetsM)
             {
                 pokedTargets++;
                 initialPower -= distanceBetweenTargetsM;
