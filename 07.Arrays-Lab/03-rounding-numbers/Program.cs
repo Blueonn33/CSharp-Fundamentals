@@ -4,12 +4,14 @@
     {
         static void Main(string[] args)
         {
-            string numbers = Console.ReadLine();
-            string[] arr = numbers.Split(' ');
+            double[] arr = Console.ReadLine()
+                .Split(' ')
+                .Select(double.Parse)
+                .ToArray();
 
-            for(int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                double num = double.Parse(arr[i]);
+                double num = arr[i];
                 Console.WriteLine($"{num} => {Math.Round(num, MidpointRounding.AwayFromZero)}");
             }
         }
