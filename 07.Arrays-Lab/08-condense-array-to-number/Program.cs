@@ -9,30 +9,19 @@
                 .Select(int.Parse)
                 .ToArray();
 
-            int size = nums.Length;
-            int[] condensed = new int[size];
-            int sum = 0;
-
-            for(int i = 0; i < size; i++)
+            while (nums.Length > 1)
             {
-                if (size == 1)
+                int[] condensed = new int[nums.Length - 1];
+
+                for (int i = 0; i < condensed.Length; i++)
                 {
-                    Console.WriteLine(nums[0]);
-                    break;
+                    condensed[i] = nums[i] + nums[i + 1];
                 }
-                for (int j = 0; j < size - i - 1; j++)
-                {
-                    condensed[j] = nums[j] + nums[j + 1];
-                    sum += condensed[j];
-                }
+
                 nums = condensed;
-                size--;
             }
 
-            if(nums.Length != 1)
-            {
-                Console.WriteLine(sum);
-            }
+            Console.WriteLine(nums[0]);
         }
     }
 }
