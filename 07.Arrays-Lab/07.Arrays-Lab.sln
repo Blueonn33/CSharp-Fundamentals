@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-day-of-week", "01-day-of
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-print-numbers-in-reverse-order", "02-print-numbers-in-reverse-order\02-print-numbers-in-reverse-order.csproj", "{08E659DC-BE36-4FE2-B441-8595841603E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-rounding-numbers", "03-rounding-numbers\03-rounding-numbers.csproj", "{45CD19D4-1583-47FC-B298-6802C5F595AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08E659DC-BE36-4FE2-B441-8595841603E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E659DC-BE36-4FE2-B441-8595841603E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E659DC-BE36-4FE2-B441-8595841603E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CD19D4-1583-47FC-B298-6802C5F595AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CD19D4-1583-47FC-B298-6802C5F595AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CD19D4-1583-47FC-B298-6802C5F595AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CD19D4-1583-47FC-B298-6802C5F595AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
