@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-spice-must-flow", "09-sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-pokemon", "10-pokemon\10-pokemon.csproj", "{28BD935A-9E7D-436E-A8CA-388D9A3F5027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-snowballs", "11-snowballs\11-snowballs.csproj", "{4E945FE9-458D-4F6F-B471-3AA7BEB4F961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{28BD935A-9E7D-436E-A8CA-388D9A3F5027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28BD935A-9E7D-436E-A8CA-388D9A3F5027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28BD935A-9E7D-436E-A8CA-388D9A3F5027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E945FE9-458D-4F6F-B471-3AA7BEB4F961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E945FE9-458D-4F6F-B471-3AA7BEB4F961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E945FE9-458D-4F6F-B471-3AA7BEB4F961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E945FE9-458D-4F6F-B471-3AA7BEB4F961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
