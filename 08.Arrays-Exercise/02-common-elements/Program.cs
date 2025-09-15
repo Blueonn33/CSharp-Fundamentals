@@ -32,6 +32,3 @@ namespace _02_common_elements
         }
     }
 }
-
-// S of t un i
-// of i 10 un
