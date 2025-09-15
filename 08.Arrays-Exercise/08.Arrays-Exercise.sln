@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-array-rotation", "04-arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-top-integers", "05-top-integers\05-top-integers.csproj", "{4FEC7E26-471E-494F-B4DF-58684A9116D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-equal-sums", "06-equal-sums\06-equal-sums.csproj", "{CBACF4BD-5368-43E4-9ACE-9B258E9970E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4FEC7E26-471E-494F-B4DF-58684A9116D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FEC7E26-471E-494F-B4DF-58684A9116D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FEC7E26-471E-494F-B4DF-58684A9116D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBACF4BD-5368-43E4-9ACE-9B258E9970E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBACF4BD-5368-43E4-9ACE-9B258E9970E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBACF4BD-5368-43E4-9ACE-9B258E9970E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBACF4BD-5368-43E4-9ACE-9B258E9970E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
