@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-repeat-string", "07-repe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-math-power", "08-math-power\08-math-power.csproj", "{E77001B1-4BF5-4E4E-B3BC-1A4F100FE9C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-greater-of-two-values", "09-greater-of-two-values\09-greater-of-two-values.csproj", "{2B5865EF-9EFD-4B43-B2B7-5F55E4A10B06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{E77001B1-4BF5-4E4E-B3BC-1A4F100FE9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E77001B1-4BF5-4E4E-B3BC-1A4F100FE9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E77001B1-4BF5-4E4E-B3BC-1A4F100FE9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5865EF-9EFD-4B43-B2B7-5F55E4A10B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5865EF-9EFD-4B43-B2B7-5F55E4A10B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5865EF-9EFD-4B43-B2B7-5F55E4A10B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5865EF-9EFD-4B43-B2B7-5F55E4A10B06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
