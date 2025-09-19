@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-smallest-of-three-number
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-vowels-count", "02-vowels-count\02-vowels-count.csproj", "{B31C965E-71ED-4AA3-803B-883BF4B4F303}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-characters-in-range", "03-characters-in-range\03-characters-in-range.csproj", "{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B31C965E-71ED-4AA3-803B-883BF4B4F303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31C965E-71ED-4AA3-803B-883BF4B4F303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31C965E-71ED-4AA3-803B-883BF4B4F303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
