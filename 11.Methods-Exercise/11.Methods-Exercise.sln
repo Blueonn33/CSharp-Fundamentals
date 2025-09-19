@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-nxn-matrix", "07-nxn-mat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-factorial-division", "08-factorial-division\08-factorial-division.csproj", "{2B193DCF-AA21-4D2E-B744-E4E978690DC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-palindrome-integers", "09-palindrome-integers\09-palindrome-integers.csproj", "{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{2B193DCF-AA21-4D2E-B744-E4E978690DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B193DCF-AA21-4D2E-B744-E4E978690DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B193DCF-AA21-4D2E-B744-E4E978690DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
