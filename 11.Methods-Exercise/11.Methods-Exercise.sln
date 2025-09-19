@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-smallest-of-three-numbers", "01-smallest-of-three-numbers\01-smallest-of-three-numbers.csproj", "{3569240C-A09F-4F10-8E92-59B11A9976E2}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-characters-in-range", "03-characters-in-range\03-characters-in-range.csproj", "{2DEAA457-FC14-4F08-97FD-4B4F4AE67007}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-password-validator", "04-password-validator\04-password-validator.csproj", "{8899DB8C-09E9-46E5-AC6C-1C2E092BE80D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-add-and-subtract", "05-add-and-subtract\05-add-and-subtract.csproj", "{FB4A9570-07C3-4169-9F54-F00B88CA2A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-middle-characters", "06-middle-characters\06-middle-characters.csproj", "{72E0E1FA-F34F-458C-B326-3DA930479F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{8899DB8C-09E9-46E5-AC6C-1C2E092BE80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8899DB8C-09E9-46E5-AC6C-1C2E092BE80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8899DB8C-09E9-46E5-AC6C-1C2E092BE80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4A9570-07C3-4169-9F54-F00B88CA2A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4A9570-07C3-4169-9F54-F00B88CA2A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4A9570-07C3-4169-9F54-F00B88CA2A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4A9570-07C3-4169-9F54-F00B88CA2A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E0E1FA-F34F-458C-B326-3DA930479F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E0E1FA-F34F-458C-B326-3DA930479F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E0E1FA-F34F-458C-B326-3DA930479F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E0E1FA-F34F-458C-B326-3DA930479F86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
