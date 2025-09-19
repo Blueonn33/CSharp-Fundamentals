@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-factorial-division", "08
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-palindrome-integers", "09-palindrome-integers\09-palindrome-integers.csproj", "{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-top-number", "10-top-number\10-top-number.csproj", "{0F05A1B6-0B51-4C67-B5C0-69B7DA5F8173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB3DEFF-155F-4BB3-81DB-43A67E6E739B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F05A1B6-0B51-4C67-B5C0-69B7DA5F8173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F05A1B6-0B51-4C67-B5C0-69B7DA5F8173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F05A1B6-0B51-4C67-B5C0-69B7DA5F8173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F05A1B6-0B51-4C67-B5C0-69B7DA5F8173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
