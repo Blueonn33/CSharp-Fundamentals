@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-data-types", "01-data-types\01-data-types.csproj", "{9AA69494-C44C-4C50-89CB-30ABD73F3C08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-center-point", "02-center-point\02-center-point.csproj", "{6D80E1B0-060F-4FCE-99DA-B9488DB9F441}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-longer-line", "03-longer-line\03-longer-line.csproj", "{2BF388F0-D5EC-4D67-A18B-12C9BE80A995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-tribonacci-sequence", "04-tribonacci-sequence\04-tribonacci-sequence.csproj", "{55AE0263-9319-4186-B82C-E35D57A1DF6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2BF388F0-D5EC-4D67-A18B-12C9BE80A995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF388F0-D5EC-4D67-A18B-12C9BE80A995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF388F0-D5EC-4D67-A18B-12C9BE80A995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AE0263-9319-4186-B82C-E35D57A1DF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AE0263-9319-4186-B82C-E35D57A1DF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AE0263-9319-4186-B82C-E35D57A1DF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AE0263-9319-4186-B82C-E35D57A1DF6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
