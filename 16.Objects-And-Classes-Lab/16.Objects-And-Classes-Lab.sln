@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-randomize-words", "01-randomize-words\01-randomize-words.csproj", "{31B8F73F-6E66-4A63-B05D-3CBE814133EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-big-factorial", "02-big-factorial\02-big-factorial.csproj", "{1EEADA1A-523A-4A2B-B0B0-297D2FB79793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-songs", "03-songs\03-songs.csproj", "{F93F730D-92CB-4A49-BFA5-DFB8449455BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-students", "04-students\04-students.csproj", "{C5DE4457-1293-4DB6-96B7-3A01124B18DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{1EEADA1A-523A-4A2B-B0B0-297D2FB79793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EEADA1A-523A-4A2B-B0B0-297D2FB79793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EEADA1A-523A-4A2B-B0B0-297D2FB79793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93F730D-92CB-4A49-BFA5-DFB8449455BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F730D-92CB-4A49-BFA5-DFB8449455BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93F730D-92CB-4A49-BFA5-DFB8449455BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F730D-92CB-4A49-BFA5-DFB8449455BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DE4457-1293-4DB6-96B7-3A01124B18DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DE4457-1293-4DB6-96B7-3A01124B18DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DE4457-1293-4DB6-96B7-3A01124B18DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DE4457-1293-4DB6-96B7-3A01124B18DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
