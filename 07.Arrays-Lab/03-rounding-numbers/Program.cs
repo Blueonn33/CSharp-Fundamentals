@@ -5,14 +5,15 @@
         static void Main(string[] args)
         {
             double[] arr = Console.ReadLine()
-                .Split(' ')
+                .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .Select(double.Parse)
                 .ToArray();
 
             for (int i = 0; i < arr.Length; i++)
             {
                 double num = arr[i];
-                Console.WriteLine($"{num} => {Math.Round(num, MidpointRounding.AwayFromZero)}");
+                int rounded = (int)Math.Round(num, MidpointRounding.AwayFromZero);
+                Console.WriteLine($"{num} => {rounded}");
             }
         }
     }
