@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-encrypt-sort-and-print-array", "01-encrypt-sort-and-print-array\01-encrypt-sort-and-print-array.csproj", "{0F77C739-6A1D-477A-B42B-7A6B88D83D21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-recursive-fibonacci", "03-recursive-fibonacci\03-recursive-fibonacci.csproj", "{9D4EA4A9-E3B5-473A-9428-5D3E81F874B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-fold-and-sum", "04-fold-and-sum\04-fold-and-sum.csproj", "{4BF0F7A6-C308-4BCF-A349-301D7A2BBB9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0F77C739-6A1D-477A-B42B-7A6B88D83D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F77C739-6A1D-477A-B42B-7A6B88D83D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F77C739-6A1D-477A-B42B-7A6B88D83D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4EA4A9-E3B5-473A-9428-5D3E81F874B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4EA4A9-E3B5-473A-9428-5D3E81F874B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4EA4A9-E3B5-473A-9428-5D3E81F874B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4EA4A9-E3B5-473A-9428-5D3E81F874B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF0F7A6-C308-4BCF-A349-301D7A2BBB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF0F7A6-C308-4BCF-A349-301D7A2BBB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF0F7A6-C308-4BCF-A349-301D7A2BBB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF0F7A6-C308-4BCF-A349-301D7A2BBB9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
