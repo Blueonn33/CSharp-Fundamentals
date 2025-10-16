@@ -16,6 +16,7 @@ namespace _05_drum_set
                 .ToList();
             List<int> drumSet = new List<int>(drumSetOriginal);
             string input;
+
             while ((input = Console.ReadLine()) != "Hit it again, Gabsy!")
             {
                 int power = int.Parse(input);
@@ -23,6 +24,7 @@ namespace _05_drum_set
                 {
                     drumSet[i] -= power;
                     double price = drumSetOriginal[i] * 3;
+
                     if (drumSet[i] <= 0)
                     {
                         if (savings >= price)
@@ -38,6 +40,7 @@ namespace _05_drum_set
                     }
                 }
             }
+
             Console.WriteLine(string.Join(" ", drumSet));
             Console.WriteLine($"Gabsy has {savings.ToString("F2", CultureInfo.InvariantCulture)}lv.");
         }
