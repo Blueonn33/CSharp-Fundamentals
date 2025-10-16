@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-fold-and-sum", "04-fold-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-longest-increasing-subsequence", "05-longest-increasing-subsequence\05-longest-increasing-subsequence.csproj", "{7201E701-4CBF-4B90-A453-F40563DF76CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-pascal-triangle", "02-pascal-triangle\02-pascal-triangle.csproj", "{940CE2D2-449F-442C-84A8-41732248ECB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7201E701-4CBF-4B90-A453-F40563DF76CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7201E701-4CBF-4B90-A453-F40563DF76CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7201E701-4CBF-4B90-A453-F40563DF76CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940CE2D2-449F-442C-84A8-41732248ECB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940CE2D2-449F-442C-84A8-41732248ECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940CE2D2-449F-442C-84A8-41732248ECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940CE2D2-449F-442C-84A8-41732248ECB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
