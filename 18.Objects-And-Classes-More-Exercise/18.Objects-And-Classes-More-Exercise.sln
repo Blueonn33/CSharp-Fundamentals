@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-company-roster", "01-company-roster\01-company-roster.csproj", "{F76415E6-B571-4398-8F35-24974242A182}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-speed-racing", "03-speed-racing\03-speed-racing.csproj", "{67EB2D84-F2E6-413B-917E-113456DE7248}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-raw-data", "04-raw-data\04-raw-data.csproj", "{66FA7CD8-5A02-49D9-9DBC-573F0036CE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-shopping-spree", "05-shopping-spree\05-shopping-spree.csproj", "{4C324A46-BA31-4284-9F2E-4F72FBCF74B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{66FA7CD8-5A02-49D9-9DBC-573F0036CE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66FA7CD8-5A02-49D9-9DBC-573F0036CE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66FA7CD8-5A02-49D9-9DBC-573F0036CE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C324A46-BA31-4284-9F2E-4F72FBCF74B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C324A46-BA31-4284-9F2E-4F72FBCF74B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C324A46-BA31-4284-9F2E-4F72FBCF74B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C324A46-BA31-4284-9F2E-4F72FBCF74B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
