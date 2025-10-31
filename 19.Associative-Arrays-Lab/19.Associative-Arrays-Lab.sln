@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-count-real-numbers", "01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-odd-occurrences", "02-odd-occurrences\02-odd-occurrences.csproj", "{9176F46B-0874-437D-80FA-FB40366D0CE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-word-synonyms", "03-word-synonyms\03-word-synonyms.csproj", "{62FBC0E5-CA6F-4174-A61C-898DAA6182C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9176F46B-0874-437D-80FA-FB40366D0CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9176F46B-0874-437D-80FA-FB40366D0CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9176F46B-0874-437D-80FA-FB40366D0CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62FBC0E5-CA6F-4174-A61C-898DAA6182C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62FBC0E5-CA6F-4174-A61C-898DAA6182C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62FBC0E5-CA6F-4174-A61C-898DAA6182C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62FBC0E5-CA6F-4174-A61C-898DAA6182C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
