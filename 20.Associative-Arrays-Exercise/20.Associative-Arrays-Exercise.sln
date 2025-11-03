@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-count-chars-in-a-string"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-a-miner-task", "02-a-miner-task\02-a-miner-task.csproj", "{24A841E6-7955-47B5-B1BD-CB352395152F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-orders", "03-orders\03-orders.csproj", "{06A7C521-A95C-4741-A943-142BBA505668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{24A841E6-7955-47B5-B1BD-CB352395152F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24A841E6-7955-47B5-B1BD-CB352395152F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24A841E6-7955-47B5-B1BD-CB352395152F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A7C521-A95C-4741-A943-142BBA505668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A7C521-A95C-4741-A943-142BBA505668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A7C521-A95C-4741-A943-142BBA505668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A7C521-A95C-4741-A943-142BBA505668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
