@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-a-miner-task", "02-a-min
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-orders", "03-orders\03-orders.csproj", "{06A7C521-A95C-4741-A943-142BBA505668}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-softuni-parking", "04-softuni-parking\04-softuni-parking.csproj", "{F7375976-D96E-4AD1-8324-FABA7309D523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{06A7C521-A95C-4741-A943-142BBA505668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06A7C521-A95C-4741-A943-142BBA505668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06A7C521-A95C-4741-A943-142BBA505668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7375976-D96E-4AD1-8324-FABA7309D523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7375976-D96E-4AD1-8324-FABA7309D523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7375976-D96E-4AD1-8324-FABA7309D523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7375976-D96E-4AD1-8324-FABA7309D523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
