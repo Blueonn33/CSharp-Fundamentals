@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-count-chars-in-a-string", "01-count-chars-in-a-string\01-count-chars-in-a-string.csproj", "{0C8283EE-114A-428B-AD63-ED31F381E471}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-orders", "03-orders\03-orders.csproj", "{06A7C521-A95C-4741-A943-142BBA505668}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-softuni-parking", "04-softuni-parking\04-softuni-parking.csproj", "{F7375976-D96E-4AD1-8324-FABA7309D523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-courses", "05-courses\05-courses.csproj", "{71C905E8-45AF-4A53-953A-946F5C399DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F7375976-D96E-4AD1-8324-FABA7309D523}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7375976-D96E-4AD1-8324-FABA7309D523}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7375976-D96E-4AD1-8324-FABA7309D523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C905E8-45AF-4A53-953A-946F5C399DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C905E8-45AF-4A53-953A-946F5C399DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C905E8-45AF-4A53-953A-946F5C399DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C905E8-45AF-4A53-953A-946F5C399DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
