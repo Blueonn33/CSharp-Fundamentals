@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-repeat-strings", "02-rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-substring", "03-substring\03-substring.csproj", "{6636FE55-BBB1-45BD-A37E-4F4963358678}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-text-filter", "04-text-filter\04-text-filter.csproj", "{7B211CCD-F98C-4988-A1CE-10854E5C1E58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6636FE55-BBB1-45BD-A37E-4F4963358678}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6636FE55-BBB1-45BD-A37E-4F4963358678}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6636FE55-BBB1-45BD-A37E-4F4963358678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B211CCD-F98C-4988-A1CE-10854E5C1E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B211CCD-F98C-4988-A1CE-10854E5C1E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B211CCD-F98C-4988-A1CE-10854E5C1E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B211CCD-F98C-4988-A1CE-10854E5C1E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
