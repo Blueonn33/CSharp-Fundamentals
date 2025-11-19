@@ -7,7 +7,7 @@ namespace _01_match_full_name
         static void Main(string[] args)
         {
             string text = Console.ReadLine();
-            string pattern = @"\b[A-Z][a-z]+ [A-Z][a-z]+";
+            string pattern = @"\b[A-Z][a-z]+ [A-Z][a-z]+\b";
 
             MatchCollection matches = Regex.Matches(text, pattern);
 
