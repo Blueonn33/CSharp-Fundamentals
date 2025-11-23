@@ -4,4 +4,5 @@
   <Project Path="03-softuni-bar-income/03-softuni-bar-income.csproj" Id="ec46d1c2-5736-436d-a923-7d55711374a2" />
   <Project Path="04-star-enigma/04-star-enigma.csproj" Id="cb474580-8c74-4cc3-9116-bd4557a9dff8" />
   <Project Path="05-nether-realms/05-nether-realms.csproj" Id="62dc938e-1996-4425-930d-fd50a82800c9" />
+  <Project Path="06-extract-emails/06-extract-emails.csproj" Id="b4412501-b8ee-45bb-9114-d6faf6670847" />
 </Solution>
