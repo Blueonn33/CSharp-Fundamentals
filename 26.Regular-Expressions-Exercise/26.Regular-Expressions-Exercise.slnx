@@ -3,4 +3,5 @@
   <Project Path="02-race/02-race.csproj" Id="d5c902f8-4ae4-4e32-a637-c8b0e93bdb87" />
   <Project Path="03-softuni-bar-income/03-softuni-bar-income.csproj" Id="ec46d1c2-5736-436d-a923-7d55711374a2" />
   <Project Path="04-star-enigma/04-star-enigma.csproj" Id="cb474580-8c74-4cc3-9116-bd4557a9dff8" />
+  <Project Path="05-nether-realms/05-nether-realms.csproj" Id="62dc938e-1996-4425-930d-fd50a82800c9" />
 </Solution>

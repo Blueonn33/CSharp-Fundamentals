@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 
 int lines = int.Parse(Console.ReadLine());
-string patternForCount = @"[STARstar]+";
+string patternForCount = @"[STARstar]";
 string patternForMessage = @"@(?<planet>[A-Za-z]+)[^@\-!>]*:(?<population>[0-9]+)[^@\-!>]*!(?<action>[A-Z])![^@\-!>]*->(?<soldiers>[0-9]+)";
 
 List<string> attackedPlanets = new List<string>();
