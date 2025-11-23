@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="01-furniture/01-furniture.csproj" />
   <Project Path="02-race/02-race.csproj" Id="d5c902f8-4ae4-4e32-a637-c8b0e93bdb87" />
+  <Project Path="03-softuni-bar-income/03-softuni-bar-income.csproj" Id="ec46d1c2-5736-436d-a923-7d55711374a2" />
 </Solution>
