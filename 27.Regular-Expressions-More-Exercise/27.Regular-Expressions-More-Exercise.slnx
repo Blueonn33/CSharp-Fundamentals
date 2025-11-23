@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="01-winning-ticket/01-winning-ticket.csproj" />
+  <Project Path="02-rage-quit/02-rage-quit.csproj" />
 </Solution>
