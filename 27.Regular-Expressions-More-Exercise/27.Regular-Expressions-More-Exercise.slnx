@@ -2,4 +2,5 @@
   <Project Path="01-winning-ticket/01-winning-ticket.csproj" />
   <Project Path="02-rage-quit/02-rage-quit.csproj" />
   <Project Path="03-post-office/03-post-office.csproj" Id="89f23d03-6dfc-45b9-a8bd-b678f957d27e" />
+  <Project Path="04-santa's-secret-helper/04-santa's-secret-helper.csproj" Id="ffd070a8-425c-4f0c-bbb8-45390c913e20" />
 </Solution>
