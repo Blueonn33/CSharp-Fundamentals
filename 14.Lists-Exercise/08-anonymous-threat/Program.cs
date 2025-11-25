@@ -1,58 +1,71 @@
-﻿namespace _08_anonymous_threat
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace _08_anonymous_threat
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            List<string> inputLines = input.Split(" ").ToList();
-            string command = "";
+            List<string> data = Console.ReadLine()
+                .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                .ToList();
 
-            while(command != "3:1")
+            string command;
+            while ((command = Console.ReadLine()) != "3:1")
             {
-                command = Console.ReadLine();
-                string[] commandParts = command.Split(" ");
+                string[] parts = command.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                string action = parts[0];
 
-                if (commandParts[0] == "merge")
+                if (action == "merge")
                 {
-                    inputLines = Merge(inputLines, int.Parse(commandParts[1]), int.Parse(commandParts[2]));
-                }
-                if(commandParts[0] == "divide")
-                {
-                    inputLines = Divide(inputLines, int.Parse(commandParts[1]), int.Parse(commandParts[2]));
-                }
+                    int startIndex = int.Parse(parts[1]);
+                    int endIndex = int.Parse(parts[2]);
 
+                    if (startIndex < 0) startIndex = 0;
+                    if (endIndex >= data.Count) endIndex = data.Count - 1;
+
+                    if (startIndex < data.Count && startIndex <= endIndex)
+                    {
+                        string merged = string.Empty;
+                        for (int i = startIndex; i <= endIndex; i++)
+                        {
+                            merged += data[i];
+                        }
+
+                        data.RemoveRange(startIndex, endIndex - startIndex + 1);
+                        data.Insert(startIndex, merged);
+                    }
+                }
+                else if (action == "divide")
+                {
+                    int index = int.Parse(parts[1]);
+                    int partitions = int.Parse(parts[2]);
+
+                    string element = data[index];
+                    data.RemoveAt(index);
+
+                    int partSize = element.Length / partitions;
+                    int extra = element.Length % partitions;
+
+                    List<string> divided = new List<string>();
+
+                    int currentIndex = 0;
+                    for (int i = 0; i < partitions; i++)
+                    {
+                        int currentPartSize = partSize;
+                        if (i == partitions - 1) currentPartSize += extra;
+
+                        divided.Add(element.Substring(currentIndex, currentPartSize));
+                        currentIndex += currentPartSize;
+                    }
+
+                    data.InsertRange(index, divided);
+                }
             }
 
-            Console.WriteLine(String.Join(" "), inputLines);
-        }
-
-        private static List<string> Merge(List<string> inputLines, int v1, int v2)
-        {
-            inputLines[v1] = string.Join("", inputLines.Skip(v1).Take(v2 - v1 + 1));
-            return inputLines;
-        }
-
-        private static List<string> Divide(List<string> inputLines, int v1, int v2)
-        {
-            string elementToDivide = inputLines[v1];
-            int partLength = elementToDivide.Length / v2;
-            List<string> dividedParts = new List<string>();
-
-            for (int i = 0; i < v2; i++)
-            {
-                if (i == v2 - 1)
-                {
-                    dividedParts.Add(elementToDivide.Substring(i * partLength));
-                }
-                else
-                {
-                    dividedParts.Add(elementToDivide.Substring(i * partLength, partLength));
-                }
-            }
-            inputLines.RemoveAt(v1);
-            inputLines.InsertRange(v1, dividedParts);
-            return inputLines;
+            Console.WriteLine(string.Join(" ", data));
         }
     }
 }
