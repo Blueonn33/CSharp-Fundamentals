@@ -1,4 +1,8 @@
-﻿namespace _05_teamwork_projects
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace _05_teamwork_projects
 {
     internal class Program
     {
@@ -6,70 +10,77 @@
         {
             int teamsCount = int.Parse(Console.ReadLine());
             List<Team> teams = new List<Team>();
-            List<User> users = new List<User>();
-            Team teamObj = new Team();
-            //John-PowerPuffsCoders
+
             for (int i = 0; i < teamsCount; i++)
             {
                 string command = Console.ReadLine();
                 string[] getTeamInfo = command.Split("-");
 
-                if(teams.Count == 0)
+                string creator = getTeamInfo[0];
+                string teamName = getTeamInfo[1];
+
+                if (teams.Any(t => t.Name == teamName))
                 {
-                    teamObj.Creator = getTeamInfo[0];
-                    teamObj.Name = getTeamInfo[1];
-                    teams.Add(teamObj);
-                    Console.WriteLine($"Team {teamObj.Name} has been created by {teamObj.Creator}!");
+                    Console.WriteLine($"Team {teamName} was already created!");
+                }
+                else if (teams.Any(t => t.Creator == creator))
+                {
+                    Console.WriteLine($"{creator} cannot create another team!");
                 }
                 else
                 {
-                    foreach (Team team in teams)
+                    Team newTeam = new Team()
                     {
-                        if (team.Name == getTeamInfo[0])
-                        {
-                            Console.WriteLine($"Team {team.Name} was already created!");
-                        }
-                        else
-                        {
-
-                            teamObj.Creator = getTeamInfo[0];
-                            teamObj.Name = getTeamInfo[1];
-                            teams.Add(teamObj);
-                            Console.WriteLine($"Team {teamObj.Name} has been created by {teamObj.Creator}!");
-                        }
-                    }
+                        Creator = creator,
+                        Name = teamName
+                    };
+                    teams.Add(newTeam);
+                    Console.WriteLine($"Team {teamName} has been created by {creator}!");
                 }
-
             }
 
             string usersCommand = Console.ReadLine();
-
             while (usersCommand != "end of assignment")
             {
                 string[] getUserInfo = usersCommand.Split("->");
-                
-                foreach(Team team in teams)
+                string userName = getUserInfo[0];
+                string teamName = getUserInfo[1];
+
+                Team team = teams.FirstOrDefault(t => t.Name == teamName);
+
+                if (team == null)
                 {
-                    if(team.Name != getUserInfo[1])
-                    {
-                        Console.WriteLine($"Team {team.Name} does not exist!");
-                    }
-                    else
-                    {
-                        User user = new User()
-                        {
-                            Name = getUserInfo[0]
-                        };
-                        users.Add(user);
-                    }
+                    Console.WriteLine($"Team {teamName} does not exist!");
+                }
+                else if (teams.Any(t => t.Users.Any(u => u.Name == userName)) || teams.Any(t => t.Creator == userName))
+                {
+                    Console.WriteLine($"Member {userName} cannot join team {teamName}!");
+                }
+                else
+                {
+                    team.Users.Add(new User() { Name = userName });
+                }
+
+                usersCommand = Console.ReadLine();
+            }
+
+            foreach (Team team in teams
+                .Where(t => t.Users.Count > 0)
+                .OrderByDescending(t => t.Users.Count)
+                .ThenBy(t => t.Name))
+            {
+                Console.WriteLine(team.Name);
+                Console.WriteLine($"- {team.Creator}");
+                foreach (User user in team.Users.OrderBy(u => u.Name))
+                {
+                    Console.WriteLine($"-- {user.Name}");
                 }
             }
 
-            teamObj.Users = users;
-
-            for(int i = 0; i < teamsCount; i++)
+            Console.WriteLine("Teams to disband:");
+            foreach (Team team in teams.Where(t => t.Users.Count == 0).OrderBy(t => t.Name))
             {
-
+                Console.WriteLine(team.Name);
             }
         }
     }
@@ -82,8 +93,6 @@
 
         public Team()
         {
-            Creator = string.Empty;
-            Name = string.Empty;
             Users = new List<User>();
         }
     }
