@@ -1,48 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Globalization;
 
-namespace _05_drum_set
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        double savings = double.Parse(Console.ReadLine());
+        List<int> initial = Console.ReadLine().Split().Select(int.Parse).ToList();
+        List<int> drums = new List<int>(initial);
+
+        string input;
+        while ((input = Console.ReadLine()) != "Hit it again, Gabsy!")
         {
-            double savings = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            List<int> drumSetOriginal = Console.ReadLine()
-                .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToList();
-            List<int> drumSet = new List<int>(drumSetOriginal);
-            string input;
+            int hit = int.Parse(input);
 
-            while ((input = Console.ReadLine()) != "Hit it again, Gabsy!")
+            for (int i = 0; i < drums.Count; i++)
             {
-                int power = int.Parse(input);
-                for (int i = drumSet.Count - 1; i >= 0; i--)
-                {
-                    drumSet[i] -= power;
-                    double price = drumSetOriginal[i] * 3;
+                drums[i] -= hit;
 
-                    if (drumSet[i] <= 0)
+                if (drums[i] <= 0)
+                {
+                    double price = initial[i] * 3;
+
+                    if (savings >= price)
                     {
-                        if (savings >= price)
-                        {
-                            drumSet[i] = drumSetOriginal[i];
-                            savings -= price;
-                        }
-                        else
-                        {
-                            drumSet.RemoveAt(i);
-                            drumSetOriginal.RemoveAt(i);
-                        }
+                        savings -= price;
+                        drums[i] = initial[i];
+                    }
+                    else
+                    {
+                        drums.RemoveAt(i);
+                        initial.RemoveAt(i);
+                        i--;
                     }
                 }
             }
-
-            Console.WriteLine(string.Join(" ", drumSet));
-            Console.WriteLine($"Gabsy has {savings.ToString("F2", CultureInfo.InvariantCulture)}lv.");
         }
+
+        Console.WriteLine(string.Join(" ", drums));
+        Console.WriteLine($"Gabsy has {savings:F2}lv.");
     }
 }
