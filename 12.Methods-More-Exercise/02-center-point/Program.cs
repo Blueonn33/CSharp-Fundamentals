@@ -1,30 +1,28 @@
-﻿namespace _02_center_point
+﻿using System;
+
+namespace _02_center_point
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int x1 = int.Parse(Console.ReadLine());
-            int y1 = int.Parse(Console.ReadLine());
-            int x2 = int.Parse(Console.ReadLine());
-            int y2 = int.Parse(Console.ReadLine());
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());
 
-            findClosestPoint(x1, y1, x2, y2);
+            PrintClosestPoint(x1, y1, x2, y2);
         }
 
-        public static void findClosestPoint(int x1, int y1, int x2, int y2)
+        public static void PrintClosestPoint(double x1, double y1, double x2, double y2)
         {
-            int distance1 = x1 * x1 + y1 * y1;
-            int distance2 = x2 * x2 + y2 * y2;
+            double d1 = x1 * x1 + y1 * y1;
+            double d2 = x2 * x2 + y2 * y2;
 
-            if (distance1 <= distance2)
-            {
+            if (d1 <= d2)
                 Console.WriteLine($"({x1}, {y1})");
-            }
             else
-            {
                 Console.WriteLine($"({x2}, {y2})");
-            }
         }
     }
 }

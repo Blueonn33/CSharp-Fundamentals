@@ -1,39 +1,70 @@
-﻿namespace _03_moba_challenger
+﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+
+namespace _03_moba_challenger
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             string command = "";
-            Dictionary<string, Dictionary<string, int>> playerPositions = new();
+            Dictionary<string, Dictionary<string, int>> players = new();
 
-            while (true)
+            while ((command = Console.ReadLine()) != "Season end")
             {
-                command = Console.ReadLine();
+                string[] playerInput = command.Split(" -> ");
+                string name = playerInput[0];
+                string role = playerInput[1];
+                int skill = int.Parse(playerInput[2]);
 
-                if (command == "Season end")
+                if (playerInput[1] == "vs")
                 {
-                    break;
-                }
+                    if (!players.ContainsKey(playerInput[0]) && !players.ContainsKey(playerInput[2]))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        string roles = "";
 
-                string[] commandData = command.Split(" -> ");
-                string player = commandData[0];
-                string position = commandData[1];
-                int skillPoints = int.Parse(commandData[2]);
+                        foreach (var player in players)
+                        {
+                            string playerName = player.Key;
+                            string player1 = playerInput[0];
 
-                
+                            //players[player1]
 
-                if (!playerPositions.ContainsKey(player))
-                {
-                    playerPositions[player] = new Dictionary<string, int>();
-                    playerPositions[player][position] = skillPoints;
+                            //Dictionary<string, int> attributes = players[player1].Value;
+                            string player2 = playerInput[2];
+
+                            if (playerName == player1)
+                            {
+                                //Dictionary<string, int> attributes = player.Value;
+
+                                //foreach (var attribute in attributes)
+                                //{
+                                //    string attributeName = attribute.Key;
+                                //    int attributeValue = attribute.Value;
+                                //}
+                            }
+
+                            
+
+                        }
+                    }
                 }
                 else
                 {
-                    playerPositions[player].Add(position, skillPoints );
+                    if (!players.ContainsKey(name))
+                    {
+                        players[name] = new Dictionary<string, int>();
+                        players[name].Add(role, skill);
+                    }
+                    else
+                    {
+                        players[name].Add(role, skill);
+                    }
                 }
-
-                
             }
         }
     }
