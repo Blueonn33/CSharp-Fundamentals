@@ -1,53 +1,49 @@
-﻿namespace _03_longer_line
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        double x1 = double.Parse(Console.ReadLine());
+        double y1 = double.Parse(Console.ReadLine());
+        double x2 = double.Parse(Console.ReadLine());
+        double y2 = double.Parse(Console.ReadLine());
+
+        double x3 = double.Parse(Console.ReadLine());
+        double y3 = double.Parse(Console.ReadLine());
+        double x4 = double.Parse(Console.ReadLine());
+        double y4 = double.Parse(Console.ReadLine());
+
+        double line1Length = CalcDistance(x1, y1, x2, y2);
+        double line2Length = CalcDistance(x3, y3, x4, y4);
+
+        if (line1Length >= line2Length)
         {
-            int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
-            int x3 = 0, y3 = 0, x4 = 0, y4 = 0;
-
-            x1 = int.Parse(Console.ReadLine());
-            y1 = int.Parse(Console.ReadLine());
-            x2 = int.Parse(Console.ReadLine());
-            y2 = int.Parse(Console.ReadLine());
-            x3 = int.Parse(Console.ReadLine());
-            y3 = int.Parse(Console.ReadLine());
-            x4 = int.Parse(Console.ReadLine());
-            y4 = int.Parse(Console.ReadLine());
-
-            double firstLine = findLongerLine(x1, y1, x2, y2);
-            double secondLine = findLongerLine(x3, y3, x4, y4);
-
-            if (firstLine > secondLine)
-            {
-                findClosestPoint(x1, y1, x2, y2);
-            }
-            else
-            {
-                findClosestPoint(x3, y3, x4, y4);
-            }
+            PrintLine(x1, y1, x2, y2);
         }
-
-        public static void findClosestPoint(int x1, int y1, int x2, int y2)
+        else
         {
-            int distance1 = x1 * x1 + y1 * y1;
-            int distance2 = x2 * x2 + y2 * y2;
-
-            if (distance1 <= distance2)
-            {
-                Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
-            }
-            else
-            {
-                Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
-            }
+            PrintLine(x3, y3, x4, y4);
         }
+    }
 
-        public static double findLongerLine(int x1, int y1, int x2, int y2)
+    static void PrintLine(double x1, double y1, double x2, double y2)
+    {
+        double firstDistance = CalcDistance(x1, y1, 0, 0);
+        double secondDistance = CalcDistance(x2, y2, 0, 0);
+
+        if (firstDistance <= secondDistance)
         {
-            double line = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            return line;
+            Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
         }
+        else
+        {
+            Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
+        }
+    }
+
+    static double CalcDistance(double x1, double y1, double x2, double y2)
+    {
+        return Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
     }
 }
