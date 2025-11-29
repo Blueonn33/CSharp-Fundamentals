@@ -8,45 +8,49 @@ class Program
     static void Main()
     {
         string input = Console.ReadLine();
-        string[] parts = input.Split('|');
-        string first = parts[0];
-        string second = parts[1];
-        string third = parts[2];
+        string[] parts = input.Split('|', 3);
 
-        var caps = new HashSet<char>();
-        var m1 = Regex.Matches(first, @"(?<symb>[#\$%\*&])(?<letters>[A-Z]+)\k<symb>");
-        foreach (Match m in m1)
+        string firstPart = parts[0];
+        string secondPart = parts[1];
+        string thirdPart = parts[2];
+
+        var capPattern = new Regex(@"([#\$%\*&])([A-Z]+)\1");
+        var capMatch = capPattern.Match(firstPart);
+        if (!capMatch.Success) return;
+
+        string capitals = capMatch.Groups[2].Value;
+
+        var secondPattern = new Regex(@"(\d{2,3}):(\d{2})");
+        var matches = secondPattern.Matches(secondPart);
+
+        var needed = new Dictionary<char, int>();
+
+        foreach (Match m in matches)
         {
-            foreach (char c in m.Groups["letters"].Value)
-                caps.Add(c);
+            int ascii = int.Parse(m.Groups[1].Value);
+            int len = int.Parse(m.Groups[2].Value);
+            char letter = (char)ascii;
+
+            if (capitals.Contains(letter) && !needed.ContainsKey(letter))
+                needed[letter] = len + 1;
         }
 
-        var pairs = new List<(char Letter, int Length)>();
-        var seen = new HashSet<char>();
-        var m2 = Regex.Matches(second, @"(?<code>\d{2}):(?<len>\d{2})");
-        foreach (Match m in m2)
-        {
-            int code = int.Parse(m.Groups["code"].Value);
-            int len = int.Parse(m.Groups["len"].Value);
-            char letter = (char)code;
+        string[] words = thirdPart.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-            if (caps.Contains(letter) && !seen.Contains(letter))
+        foreach (char c in capitals)
+        {
+            if (!needed.ContainsKey(c)) continue;
+
+            int targetLen = needed[c];
+
+            foreach (string w in words)
             {
-                pairs.Add((letter, len + 1));
-                seen.Add(letter);
+                if (w.Length == targetLen && w[0] == c)
+                {
+                    Console.WriteLine(w);
+                    break;
+                }
             }
         }
-
-        var tokens = third.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        var results = new List<string>();
-
-        foreach (var (Letter, Length) in pairs)
-        {
-            string found = tokens.FirstOrDefault(t => t[0] == Letter && t.Length == Length);
-            if (found != null)
-                results.Add(found);
-        }
-
-        Console.WriteLine(string.Join(Environment.NewLine, results));
     }
 }
