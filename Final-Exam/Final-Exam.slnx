@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="01-hogwarts/01-hogwarts.csproj" />
   <Project Path="02-message-decrypter/02-message-decrypter.csproj" />
+  <Project Path="03-degustation-party/03-degustation-party.csproj" />
 </Solution>
